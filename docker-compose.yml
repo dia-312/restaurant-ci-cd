@@ -1,3 +1,5 @@
+name: restaurant-app
+
 services:
   db:
     image: mysql:8.0
