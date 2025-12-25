@@ -7,6 +7,8 @@ services:
       MYSQL_DATABASE: restaurant_db
       MYSQL_USER: restaurant_user
       MYSQL_PASSWORD: restaurant123
+    volumes:
+      - ./mysql:/docker-entrypoint-initdb.d
     healthcheck:
       test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
       interval: 10s
@@ -17,7 +19,7 @@ services:
     build: ./apache
     restart: always
     ports:
-      - "8081:80"
+      - "8082:80"
     depends_on:
       db:
         condition: service_healthy
