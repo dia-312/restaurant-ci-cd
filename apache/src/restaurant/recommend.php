@@ -1,7 +1,23 @@
 <?php
 $meal = strtolower($_POST['meal']);
 
-$conn = new mysqli("db", "restaurant_user", "restaurant123", "restaurant_db");
+$host = "db";
+$user = "restaurant_user";
+$pass = "restaurant123";
+$db   = "restaurant_db";
+
+for ($i = 0; $i < 5; $i++) {
+    $conn = @new mysqli($host, $user, $pass, $db);
+    if (!$conn->connect_error) {
+        break;
+    }
+    sleep(2);
+}
+
+if ($conn->connect_error) {
+    die("Database connection failed");
+}
+
 
 
 
