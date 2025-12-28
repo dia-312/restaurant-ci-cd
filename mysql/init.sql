@@ -14,4 +14,5 @@ INSERT INTO restaurants (name, meal, rating) VALUES
 ('Shawarma King', 'shawarma', 4.8),
 ('Sushi Spot', 'sushi', 4.7),
 ('Pasta Corner', 'pasta', 4.5);
+('falafel Corner', 'falafel', 4.5);
 
