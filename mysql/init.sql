@@ -9,11 +9,11 @@ CREATE TABLE IF NOT EXISTS restaurants (
 );
 
 INSERT INTO restaurants (name, meal, rating) VALUES
-('Pizza Palace', 'pizza', 4.6),
+('zeko natanah', 'pizza', 4.6),
 ('Burger Hub', 'burger', 4.4),
 ('Shawarma King', 'shawarma', 4.8),
 ('Sushi Spot', 'sushi', 4.7),
 ('Pasta Corner', 'pasta', 4.5),
 ('ENG Ibrahim Steak', 'steak', 4.5),
-('falafel Corner', 'falafel', 4.5);
+('7oda talawoth', 'falafel', 4.5);
 
